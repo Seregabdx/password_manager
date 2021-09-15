@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="App.MainForm">
+  <grid id="27dc6" binding="root" layout-manager="GridLayoutManager" row-count="6" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="587" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="etched"/>
+    <children>
+      <grid id="83091" binding="datePannel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="1" row-span="3" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="etched"/>
+        <children>
+          <scrollpane id="64728">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="9316d" class="javax.swing.JTable" binding="dateTable">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+      <grid id="4282a" binding="histPannel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="4" column="1" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="etched"/>
+        <children>
+          <toolbar id="6c089">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="-1" height="20"/>
+              </grid>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="eaba1" class="javax.swing.JButton" binding="clearHistoryButton" default-binding="true">
+                <constraints/>
+                <properties>
+                  <text value="Clear History"/>
+                </properties>
+              </component>
+            </children>
+          </toolbar>
+          <scrollpane id="8e030" binding="histScroll">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="d2045" class="javax.swing.JTable" binding="histTable">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+      <grid id="52822" binding="mainTablePannel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="5" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="etched"/>
+        <children>
+          <toolbar id="1eef3" binding="menuToolBar">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="-1" height="20"/>
+              </grid>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="21355" class="javax.swing.JButton" binding="addButton" default-binding="true">
+                <constraints/>
+                <properties>
+                  <text value="Add"/>
+                </properties>
+              </component>
+              <component id="431f7" class="javax.swing.JButton" binding="changeButton" default-binding="true">
+                <constraints/>
+                <properties>
+                  <text value="Change"/>
+                </properties>
+              </component>
+              <component id="6d1c9" class="javax.swing.JButton" binding="deleteButton" default-binding="true">
+                <constraints/>
+                <properties>
+                  <text value="Delete"/>
+                </properties>
+              </component>
+              <component id="167f7" class="javax.swing.JToolBar$Separator" binding="separator2">
+                <constraints/>
+                <properties/>
+              </component>
+              <component id="8ab32" class="javax.swing.JButton" binding="regenActiveButton" default-binding="true">
+                <constraints/>
+                <properties>
+                  <text value="Regen active"/>
+                </properties>
+              </component>
+              <component id="2737c" class="javax.swing.JButton" binding="regenOldButton" default-binding="true">
+                <constraints/>
+                <properties>
+                  <text value="Regen old"/>
+                </properties>
+              </component>
+              <component id="6b444" class="javax.swing.JButton" binding="regenAllButton" default-binding="true">
+                <constraints/>
+                <properties>
+                  <text value="Regen all"/>
+                </properties>
+              </component>
+            </children>
+          </toolbar>
+          <scrollpane id="f5306" binding="tableScroll">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="7e223" class="javax.swing.JTable" binding="dbTable">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+      <grid id="dc9d0" binding="mainToolPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <toolbar id="f61ae">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="-1" height="20"/>
+              </grid>
+            </constraints>
+            <properties/>
+            <border type="etched"/>
+            <children>
+              <component id="d189e" class="javax.swing.JButton" binding="newButton" default-binding="true">
+                <constraints/>
+                <properties>
+                  <text value="New"/>
+                </properties>
+              </component>
+              <component id="afab2" class="javax.swing.JToolBar$Separator">
+                <constraints/>
+                <properties/>
+              </component>
+              <component id="64fee" class="javax.swing.JButton" binding="openButton" default-binding="true">
+                <constraints/>
+                <properties>
+                  <text value="Open DB"/>
+                </properties>
+              </component>
+              <component id="b290b" class="javax.swing.JButton" binding="openXMLButton" default-binding="true">
+                <constraints/>
+                <properties>
+                  <text value="OpenXML"/>
+                </properties>
+              </component>
+              <component id="eaea2" class="javax.swing.JToolBar$Separator">
+                <constraints/>
+                <properties/>
+              </component>
+              <component id="ee179" class="javax.swing.JButton" binding="saveButton">
+                <constraints/>
+                <properties>
+                  <text value="Commit DB"/>
+                </properties>
+              </component>
+              <component id="9277c" class="javax.swing.JButton" binding="saveXMLButton">
+                <constraints/>
+                <properties>
+                  <text value="Save XML"/>
+                </properties>
+              </component>
+              <component id="43cc4" class="javax.swing.JToolBar$Separator">
+                <constraints/>
+                <properties/>
+              </component>
+              <component id="8589c" class="javax.swing.JButton" binding="savePDFButton">
+                <constraints/>
+                <properties>
+                  <text value="Export PDF"/>
+                </properties>
+              </component>
+              <component id="d25a8" class="javax.swing.JToolBar$Separator">
+                <constraints/>
+                <properties/>
+              </component>
+              <component id="e1942" class="javax.swing.JButton" binding="exitButton" default-binding="true">
+                <constraints/>
+                <properties>
+                  <text value="Exit"/>
+                </properties>
+              </component>
+              <hspacer id="a0a68">
+                <constraints/>
+              </hspacer>
+              <component id="9a779" class="javax.swing.JButton" binding="MThreadButton" default-binding="true">
+                <constraints/>
+                <properties>
+                  <text value="MThread"/>
+                </properties>
+              </component>
+            </children>
+          </toolbar>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
